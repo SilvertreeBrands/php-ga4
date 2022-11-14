@@ -13,3 +13,4 @@ composer require silvertree/php-ga4
 - Unit tests
 - SSGTM implementation
 - Provide examples for implementation in M1 nad M2
+- Cater to all events categories
