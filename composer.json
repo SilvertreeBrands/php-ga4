@@ -1,0 +1,25 @@
+{
+  "name": "silvertree/php-ga4",
+  "description": "GA4 Event Schema",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shaughn Le Grange - Hatlen",
+      "homepage": "https://www.silvertreebrands.com",
+      "role": "Software Engineer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/SilvertreeBrands/php-ga4/issues",
+    "source": "https://github.com/SilvertreeBrands/php-ga4/releases/latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Silvertree\\PhpGa4\\": "src"
+    }
+  },
+  "require": {
+    "php": "~7.4.0||~8.0"
+  }
+}
