@@ -98,4 +98,24 @@ class AddPaymentInfo extends AbstractObject implements AddPaymentInfoInterface
     {
         return (array)$this->offsetGet(AddPaymentInfoInterface::ITEMS);
     }
+
+    /**
+     * Add item
+     *
+     * @param \Silvertree\Ga4\ItemInterface $item
+     *
+     * @return AddPaymentInfo
+     */
+    public function addItem(\Silvertree\Ga4\ItemInterface $item): AddPaymentInfo
+    {
+        $identifier = $item->getItemId();
+
+        if (!$identifier) {
+            $identifier = $item->getItemName();
+        }
+
+        $this->data[AddPaymentInfoInterface::ITEMS][$identifier] = $item;
+
+        return $this;
+    }
 }
