@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Silvertree\\PhpGa4\\": "src"
+      "Silvertree\\Ga4\\": "src"
     }
   },
   "require": {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Silvertree\PhpGa4\Event;
+namespace Silvertree\Ga4\Event;
 
 class Purchase extends AbstractEvent implements PurchaseInterface
 {
