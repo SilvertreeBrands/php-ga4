@@ -10,6 +10,11 @@ class RemoveFromCart extends AbstractEvent implements RemoveFromCartInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = RemoveFromCartInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): RemoveFromCartInterface
     {
         $this->offsetSet(RemoveFromCartInterface::CURRENCY, $currency);

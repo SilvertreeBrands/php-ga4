@@ -7,6 +7,8 @@ interface SignUpInterface
 {
     public const METHOD = 'method';
 
+    public const REQUIRED_PARAMS = [];
+
     /**
      * Set method
      *

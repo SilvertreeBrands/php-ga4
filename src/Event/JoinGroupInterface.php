@@ -7,6 +7,8 @@ interface JoinGroupInterface
 {
     public const GROUP_ID = 'group_id';
 
+    public const REQUIRED_PARAMS = [];
+
     /**
      * Set group ID
      *

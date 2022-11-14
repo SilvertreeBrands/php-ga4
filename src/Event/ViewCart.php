@@ -10,6 +10,11 @@ class ViewCart extends AbstractEvent implements ViewCartInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = ViewCartInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): ViewCartInterface
     {
         $this->offsetSet(ViewCartInterface::CURRENCY, $currency);

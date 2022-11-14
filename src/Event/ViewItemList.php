@@ -10,6 +10,11 @@ class ViewItemList extends AbstractEvent implements ViewItemListInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = ViewItemListInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setItemListId(string $listId): ViewItemListInterface
     {
         $this->offsetSet(ViewItemListInterface::ITEM_LIST_ID, $listId);

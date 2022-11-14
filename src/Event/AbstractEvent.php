@@ -11,6 +11,28 @@ abstract class AbstractEvent implements \ArrayAccess
     protected array $data = [];
 
     /**
+     * @var array
+     */
+    protected array $requiredParams = [];
+
+    /**
+     * Construct
+     */
+    public function __construct()
+    {
+        // Prepare and set default values
+        foreach ($this->requiredParams as $requiredParam) {
+            $methodName = str_replace(' ', '', ucwords(str_replace('_', ' ', $requiredParam)));
+            $getter = 'get' . $methodName;
+            $setter = 'set' . $methodName;
+
+            if (method_exists($this, $getter) && method_exists($this, $setter)) {
+                $this->$setter($this->$getter());
+            }
+        }
+    }
+
+    /**
      * @inheritDoc
      */
     public function offsetSet($offset, $value): void

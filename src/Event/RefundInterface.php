@@ -14,6 +14,13 @@ interface RefundInterface
     public const TAX = 'tax';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::TRANSACTION_ID,
+        self::VALUE,
+        self::ITEMS
+    ];
+
     /**
      * Set currency
      *

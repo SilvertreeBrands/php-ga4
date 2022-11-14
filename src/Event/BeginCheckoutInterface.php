@@ -10,6 +10,12 @@ interface BeginCheckoutInterface
     public const COUPON = 'coupon';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::VALUE,
+        self::ITEMS
+    ];
+
     /**
      * Set currency
      *

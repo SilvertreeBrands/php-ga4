@@ -10,6 +10,11 @@ class SignUp extends AbstractEvent implements SignUpInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SignUpInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setMethod(string $method): SignUpInterface
     {
         $this->offsetSet(SignUpInterface::METHOD, $method);

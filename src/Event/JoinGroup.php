@@ -10,6 +10,11 @@ class JoinGroup extends AbstractEvent implements JoinGroupInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = JoinGroupInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setGroupId(string $groupId): JoinGroupInterface
     {
         $this->offsetSet(JoinGroupInterface::GROUP_ID, $groupId);

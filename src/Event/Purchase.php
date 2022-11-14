@@ -10,6 +10,11 @@ class Purchase extends AbstractEvent implements PurchaseInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = PurchaseInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): PurchaseInterface
     {
         $this->offsetSet(PurchaseInterface::CURRENCY, $currency);

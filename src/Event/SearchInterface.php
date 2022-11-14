@@ -7,6 +7,10 @@ interface SearchInterface
 {
     public const SEARCH_TERM = 'search_term';
 
+    public const REQUIRED_PARAMS = [
+        self::SEARCH_TERM
+    ];
+
     /**
      * Set search term
      *

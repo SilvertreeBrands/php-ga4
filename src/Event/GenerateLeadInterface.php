@@ -8,6 +8,11 @@ interface GenerateLeadInterface
     public const CURRENCY = 'currency';
     public const VALUE = 'value';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::VALUE
+    ];
+
     /**
      * Set currency
      *

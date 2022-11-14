@@ -10,6 +10,11 @@ class Refund extends AbstractEvent implements RefundInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = RefundInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): RefundInterface
     {
         $this->offsetSet(RefundInterface::CURRENCY, $currency);

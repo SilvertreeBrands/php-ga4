@@ -10,6 +10,11 @@ class AddPaymentInfo extends AbstractEvent implements AddPaymentInfoInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = AddPaymentInfoInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): AddPaymentInfoInterface
     {
         $this->offsetSet(AddPaymentInfoInterface::CURRENCY, $currency);

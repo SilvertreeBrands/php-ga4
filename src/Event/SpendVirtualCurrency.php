@@ -10,6 +10,11 @@ class SpendVirtualCurrency extends AbstractEvent implements SpendVirtualCurrency
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SpendVirtualCurrencyInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setValue(float $value): SpendVirtualCurrencyInterface
     {
         $this->offsetSet(SpendVirtualCurrencyInterface::VALUE, $value);

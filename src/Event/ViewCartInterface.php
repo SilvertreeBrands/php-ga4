@@ -9,6 +9,12 @@ interface ViewCartInterface
     public const VALUE = 'value';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::VALUE,
+        self::ITEMS
+    ];
+
     /**
      * Set currency
      *

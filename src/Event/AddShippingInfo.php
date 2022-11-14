@@ -10,6 +10,11 @@ class AddShippingInfo extends AbstractEvent implements AddShippingInfoInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = AddShippingInfoInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): AddShippingInfoInterface
     {
         $this->offsetSet(AddShippingInfoInterface::CURRENCY, $currency);

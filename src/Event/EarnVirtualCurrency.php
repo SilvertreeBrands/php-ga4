@@ -10,6 +10,11 @@ class EarnVirtualCurrency extends AbstractEvent implements EarnVirtualCurrencyIn
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = EarnVirtualCurrencyInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setVirtualCurrencyName(string $name): EarnVirtualCurrencyInterface
     {
         $this->offsetSet(EarnVirtualCurrencyInterface::VIRTUAL_CURRENCY_NAME, $name);

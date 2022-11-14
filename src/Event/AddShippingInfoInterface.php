@@ -11,6 +11,12 @@ interface AddShippingInfoInterface
     public const SHIPPING_TIER = 'shipping_tier';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::VALUE,
+        self::ITEMS
+    ];
+
     /**
      * Set currency
      *

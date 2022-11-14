@@ -11,6 +11,12 @@ interface AddPaymentInfoInterface
     public const PAYMENT_TYPE = 'payment_type';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::CURRENCY,
+        self::VALUE,
+        self::ITEMS
+    ];
+
     /**
      * Set currency
      *

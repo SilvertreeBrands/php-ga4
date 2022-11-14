@@ -9,6 +9,11 @@ interface SpendVirtualCurrencyInterface
     public const VIRTUAL_CURRENCY_NAME = 'virtual_currency_name';
     public const ITEM_NAME = 'item_name';
 
+    public const REQUIRED_PARAMS = [
+        self::VALUE,
+        self::VIRTUAL_CURRENCY_NAME
+    ];
+
     /**
      * Set value
      *

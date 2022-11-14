@@ -10,6 +10,11 @@ class Share extends AbstractEvent implements ShareInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = ShareInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setMethod(string $method): ShareInterface
     {
         $this->offsetSet(ShareInterface::METHOD, $method);

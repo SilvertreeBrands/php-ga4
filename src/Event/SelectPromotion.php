@@ -10,6 +10,11 @@ class SelectPromotion extends AbstractEvent implements SelectPromotionInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SelectPromotionInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCreativeName(string $name): SelectPromotionInterface
     {
         $this->offsetSet(SelectPromotionInterface::CREATIVE_NAME, $name);

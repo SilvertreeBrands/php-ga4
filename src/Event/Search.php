@@ -10,6 +10,11 @@ class Search extends AbstractEvent implements SearchInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SearchInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setSearchTerm(string $term): SearchInterface
     {
         $this->offsetSet(SearchInterface::SEARCH_TERM, $term);

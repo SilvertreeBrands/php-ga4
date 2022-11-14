@@ -10,6 +10,11 @@ class AddToWishlist extends AbstractEvent implements AddToWishlistInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = AddToWishlistInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): AddToWishlistInterface
     {
         $this->offsetSet(AddToWishlistInterface::CURRENCY, $currency);

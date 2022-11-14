@@ -10,6 +10,11 @@ class Login extends AbstractEvent implements LoginInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = LoginInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setMethod(string $method): LoginInterface
     {
         $this->offsetSet(LoginInterface::METHOD, $method);

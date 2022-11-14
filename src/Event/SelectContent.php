@@ -10,6 +10,11 @@ class SelectContent extends AbstractEvent implements SelectContentInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SelectContentInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setContentType(string $type): SelectContentInterface
     {
         $this->offsetSet(SelectContentInterface::CONTENT_TYPE, $type);

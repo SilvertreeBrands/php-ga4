@@ -10,6 +10,11 @@ class ViewPromotion extends AbstractEvent implements ViewPromotionInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = ViewPromotionInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCreativeName(string $name): ViewPromotionInterface
     {
         $this->offsetSet(ViewPromotionInterface::CREATIVE_NAME, $name);

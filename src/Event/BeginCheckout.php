@@ -10,6 +10,11 @@ class BeginCheckout extends AbstractEvent implements BeginCheckoutInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = BeginCheckoutInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): BeginCheckoutInterface
     {
         $this->offsetSet(BeginCheckoutInterface::CURRENCY, $currency);

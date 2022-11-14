@@ -12,6 +12,10 @@ interface ViewPromotionInterface
     public const PROMOTION_NAME = 'promotion_name';
     public const ITEMS = 'items';
 
+    public const REQUIRED_PARAMS = [
+        self::ITEMS
+    ];
+
     /**
      * Set creative name
      *

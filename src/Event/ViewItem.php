@@ -10,6 +10,11 @@ class ViewItem extends AbstractEvent implements ViewItemInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = ViewItemInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): ViewItemInterface
     {
         $this->offsetSet(ViewItemInterface::CURRENCY, $currency);

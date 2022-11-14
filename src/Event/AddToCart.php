@@ -10,6 +10,11 @@ class AddToCart extends AbstractEvent implements AddToCartInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = AddToCartInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): AddToCartInterface
     {
         $this->offsetSet(AddToCartInterface::CURRENCY, $currency);

@@ -8,6 +8,8 @@ interface EarnVirtualCurrencyInterface
     public const VIRTUAL_CURRENCY_NAME = 'virtual_currency_name';
     public const VALUE = 'value';
 
+    public const REQUIRED_PARAMS = [];
+
     /**
      * Set virtual currency name
      *

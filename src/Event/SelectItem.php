@@ -10,6 +10,11 @@ class SelectItem extends AbstractEvent implements SelectItemInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = SelectItemInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setItemListId(string $listId): SelectItemInterface
     {
         $this->offsetSet(SelectItemInterface::ITEM_LIST_ID, $listId);

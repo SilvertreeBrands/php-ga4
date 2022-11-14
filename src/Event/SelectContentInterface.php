@@ -8,6 +8,8 @@ interface SelectContentInterface
     public const CONTENT_TYPE = 'content_type';
     public const ITEM_ID = 'item_id';
 
+    public const REQUIRED_PARAMS = [];
+
     /**
      * Set content type
      *

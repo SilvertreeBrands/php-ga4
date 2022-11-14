@@ -10,6 +10,11 @@ class GenerateLead extends AbstractEvent implements GenerateLeadInterface
     /**
      * @inheritDoc
      */
+    protected array $requiredParams = GenerateLeadInterface::REQUIRED_PARAMS;
+
+    /**
+     * @inheritDoc
+     */
     public function setCurrency(string $currency): GenerateLeadInterface
     {
         $this->offsetSet(GenerateLeadInterface::CURRENCY, $currency);
