@@ -5,6 +5,12 @@ namespace Silvertree\PhpGa4\Event;
 
 interface AddPaymentInfoInterface
 {
+    public const CURRENCY = 'currency';
+    public const VALUE = 'value';
+    public const COUPON = 'coupon';
+    public const PAYMENT_TYPE = 'payment_type';
+    public const ITEMS = 'items';
+
     /**
      * Set currency
      *

@@ -5,6 +5,26 @@ namespace Silvertree\PhpGa4\Event;
 
 interface ItemInterface
 {
+    public const ITEM_ID = 'item_id';
+    public const ITEM_NAME = 'item_name';
+    public const AFFILIATION = 'affiliation';
+    public const COUPON = 'coupon';
+    public const CURRENCY = 'currency';
+    public const DISCOUNT = 'discount';
+    public const INDEX = 'index';
+    public const ITEM_BRAND = 'item_brand';
+    public const ITEM_CATEGORY_ONE = 'item_category';
+    public const ITEM_CATEGORY_TWO = 'item_category2';
+    public const ITEM_CATEGORY_THREE = 'item_category3';
+    public const ITEM_CATEGORY_FOUR = 'item_category4';
+    public const ITEM_CATEGORY_FIVE = 'item_category5';
+    public const ITEM_LIST_ID = 'item_list_id';
+    public const ITEM_LIST_NAME = 'item_list_name';
+    public const ITEM_VARIANT = 'item_variant';
+    public const LOCATION_ID = 'location_id';
+    public const PRICE = 'price';
+    public const QUANTITY = 'quantity';
+
     /**
      * Set item ID
      *

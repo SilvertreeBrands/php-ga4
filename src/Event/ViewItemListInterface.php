@@ -5,6 +5,10 @@ namespace Silvertree\PhpGa4\Event;
 
 interface ViewItemListInterface
 {
+    public const ITEM_LIST_ID = 'item_list_id';
+    public const ITEM_LIST_NAME = 'item_list_name';
+    public const ITEMS = 'items';
+
     /**
      * Set item list ID
      *

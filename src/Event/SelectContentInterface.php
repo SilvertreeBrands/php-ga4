@@ -5,6 +5,9 @@ namespace Silvertree\PhpGa4\Event;
 
 interface SelectContentInterface
 {
+    public const CONTENT_TYPE = 'content_type';
+    public const ITEM_ID = 'item_id';
+
     /**
      * Set content type
      *

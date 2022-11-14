@@ -5,6 +5,9 @@ namespace Silvertree\PhpGa4\Event;
 
 interface GenerateLeadInterface
 {
+    public const CURRENCY = 'currency';
+    public const VALUE = 'value';
+
     /**
      * Set currency
      *

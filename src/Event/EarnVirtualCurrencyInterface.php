@@ -5,6 +5,9 @@ namespace Silvertree\PhpGa4\Event;
 
 interface EarnVirtualCurrencyInterface
 {
+    public const VIRTUAL_CURRENCY_NAME = 'virtual_currency_name';
+    public const VALUE = 'value';
+
     /**
      * Set virtual currency name
      *

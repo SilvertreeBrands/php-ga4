@@ -5,6 +5,12 @@ namespace Silvertree\PhpGa4\Event;
 
 interface AddShippingInfoInterface
 {
+    public const CURRENCY = 'currency';
+    public const VALUE = 'value';
+    public const COUPON = 'coupon';
+    public const SHIPPING_TIER = 'shipping_tier';
+    public const ITEMS = 'items';
+
     /**
      * Set currency
      *

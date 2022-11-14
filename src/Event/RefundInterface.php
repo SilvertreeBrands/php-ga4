@@ -5,6 +5,15 @@ namespace Silvertree\PhpGa4\Event;
 
 interface RefundInterface
 {
+    public const CURRENCY = 'currency';
+    public const TRANSACTION_ID = 'transaction_id';
+    public const VALUE = 'value';
+    public const AFFILIATION = 'affiliation';
+    public const COUPON = 'coupon';
+    public const SHIPPING = 'shipping';
+    public const TAX = 'tax';
+    public const ITEMS = 'items';
+
     /**
      * Set currency
      *

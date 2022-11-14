@@ -5,6 +5,10 @@ namespace Silvertree\PhpGa4\Event;
 
 interface SpendVirtualCurrencyInterface
 {
+    public const VALUE = 'value';
+    public const VIRTUAL_CURRENCY_NAME = 'virtual_currency_name';
+    public const ITEM_NAME = 'item_name';
+
     /**
      * Set value
      *

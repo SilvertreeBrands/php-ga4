@@ -5,6 +5,8 @@ namespace Silvertree\PhpGa4\Event;
 
 interface SignUpInterface
 {
+    public const METHOD = 'method';
+
     /**
      * Set method
      *

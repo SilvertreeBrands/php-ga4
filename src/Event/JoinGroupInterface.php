@@ -5,6 +5,8 @@ namespace Silvertree\PhpGa4\Event;
 
 interface JoinGroupInterface
 {
+    public const GROUP_ID = 'group_id';
+
     /**
      * Set group ID
      *

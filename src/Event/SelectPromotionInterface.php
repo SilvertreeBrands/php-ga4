@@ -5,6 +5,13 @@ namespace Silvertree\PhpGa4\Event;
 
 interface SelectPromotionInterface
 {
+    public const CREATIVE_NAME = 'creative_name';
+    public const CREATIVE_SLOT = 'creative_slot';
+    public const LOCATION_ID = 'location_id';
+    public const PROMOTION_ID = 'promotion_id';
+    public const PROMOTION_NAME = 'promotion_name';
+    public const ITEMS = 'items';
+
     /**
      * Set creative name
      *

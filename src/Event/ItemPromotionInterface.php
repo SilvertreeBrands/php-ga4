@@ -5,6 +5,9 @@ namespace Silvertree\PhpGa4\Event;
 
 interface ItemPromotionInterface extends ItemInterface
 {
+    public const PROMOTION_ID = 'promotion_id';
+    public const PROMOTION_NAME = 'promotion_name';
+
     /**
      * Set promotion ID
      *

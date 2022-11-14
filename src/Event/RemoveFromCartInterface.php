@@ -5,6 +5,10 @@ namespace Silvertree\PhpGa4\Event;
 
 interface RemoveFromCartInterface
 {
+    public const CURRENCY = 'currency';
+    public const VALUE = 'value';
+    public const ITEMS = 'items';
+
     /**
      * Set currency
      *

@@ -5,6 +5,11 @@ namespace Silvertree\PhpGa4\Event;
 
 interface BeginCheckoutInterface
 {
+    public const CURRENCY = 'currency';
+    public const VALUE = 'value';
+    public const COUPON = 'coupon';
+    public const ITEMS = 'items';
+
     /**
      * Set currency
      *

@@ -5,6 +5,8 @@ namespace Silvertree\PhpGa4\Event;
 
 interface SearchInterface
 {
+    public const SEARCH_TERM = 'search_term';
+
     /**
      * Set search term
      *
