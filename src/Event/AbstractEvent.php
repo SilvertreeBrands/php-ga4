@@ -21,7 +21,7 @@ abstract class AbstractEvent implements \ArrayAccess
     /**
      * @inheritDoc
      */
-    public function offsetGet($offset)
+    public function offsetGet($offset = '')
     {
         if ('' === $offset) {
             return $this->data;

@@ -1,0 +1,60 @@
+<?php
+declare(strict_types=1);
+
+namespace Silvertree\PhpGa4\Event;
+
+class ViewItem extends AbstractEvent implements ViewItemInterface
+{
+    public const EVENT_NAME = 'view_item';
+
+    /**
+     * @inheritDoc
+     */
+    public function setCurrency(string $currency): ViewItemInterface
+    {
+        $this->offsetSet(ViewItemInterface::CURRENCY, $currency);
+        return $this;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getCurrency(): string
+    {
+        return (string)$this->offsetGet(ViewItemInterface::CURRENCY);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setValue(float $value): ViewItemInterface
+    {
+        $this->offsetSet(ViewItemInterface::VALUE, $value);
+        return $this;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getValue(): float
+    {
+        return (float)$this->offsetGet(ViewItemInterface::VALUE);
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setItems(array $items): ViewItemInterface
+    {
+        $this->offsetSet(ViewItemInterface::ITEMS, $items);
+        return $this;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getItems(): array
+    {
+        return (array)$this->offsetGet(ViewItemInterface::ITEMS);
+    }
+}
