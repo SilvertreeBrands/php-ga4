@@ -129,7 +129,7 @@ interface PurchaseInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return PurchaseInterface
      */
     public function setItems(array $items): PurchaseInterface;
@@ -137,7 +137,7 @@ interface PurchaseInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

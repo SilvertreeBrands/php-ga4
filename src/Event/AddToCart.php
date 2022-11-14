@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class AddToCart extends AbstractEvent implements AddToCartInterface
+use Silvertree\Ga4\AbstractObject;
+
+class AddToCart extends AbstractObject implements AddToCartInterface
 {
     public const EVENT_NAME = 'add_to_cart';
 

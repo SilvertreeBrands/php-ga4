@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class AddShippingInfo extends AbstractEvent implements AddShippingInfoInterface
+use Silvertree\Ga4\AbstractObject;
+
+class AddShippingInfo extends AbstractObject implements AddShippingInfoInterface
 {
     public const EVENT_NAME = 'add_shipping_info';
 

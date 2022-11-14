@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class AddPaymentInfo extends AbstractEvent implements AddPaymentInfoInterface
+use Silvertree\Ga4\AbstractObject;
+
+class AddPaymentInfo extends AbstractObject implements AddPaymentInfoInterface
 {
     public const EVENT_NAME = 'add_payment_info';
 

@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class ViewItemList extends AbstractEvent implements ViewItemListInterface
+use Silvertree\Ga4\AbstractObject;
+
+class ViewItemList extends AbstractObject implements ViewItemListInterface
 {
     public const EVENT_NAME = 'view_item_list';
 

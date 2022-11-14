@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class RemoveFromCart extends AbstractEvent implements RemoveFromCartInterface
+use Silvertree\Ga4\AbstractObject;
+
+class RemoveFromCart extends AbstractObject implements RemoveFromCartInterface
 {
     public const EVENT_NAME = 'remove_from_cart';
 

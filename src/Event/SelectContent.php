@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class SelectContent extends AbstractEvent implements SelectContentInterface
+use Silvertree\Ga4\AbstractObject;
+
+class SelectContent extends AbstractObject implements SelectContentInterface
 {
     public const EVENT_NAME = 'select_content';
 

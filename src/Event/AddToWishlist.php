@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class AddToWishlist extends AbstractEvent implements AddToWishlistInterface
+use Silvertree\Ga4\AbstractObject;
+
+class AddToWishlist extends AbstractObject implements AddToWishlistInterface
 {
     public const EVENT_NAME = 'add_to_wishlist';
 

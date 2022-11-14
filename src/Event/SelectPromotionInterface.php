@@ -92,7 +92,7 @@ interface SelectPromotionInterface
     /**
      * Set items
      *
-     * @param ItemPromotionInterface[] $items
+     * @param \Silvertree\Ga4\ItemPromotionInterface[] $items
      * @return SelectPromotionInterface
      */
     public function setItems(array $items): SelectPromotionInterface;
@@ -100,7 +100,7 @@ interface SelectPromotionInterface
     /**
      * Get items
      *
-     * @return ItemPromotionInterface[]
+     * @return \Silvertree\Ga4\ItemPromotionInterface[]
      */
     public function getItems(): array;
 }

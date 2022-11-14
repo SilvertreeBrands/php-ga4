@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class GenerateLead extends AbstractEvent implements GenerateLeadInterface
+use Silvertree\Ga4\AbstractObject;
+
+class GenerateLead extends AbstractObject implements GenerateLeadInterface
 {
     public const EVENT_NAME = 'generate_lead';
 

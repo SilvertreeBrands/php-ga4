@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class Share extends AbstractEvent implements ShareInterface
+use Silvertree\Ga4\AbstractObject;
+
+class Share extends AbstractObject implements ShareInterface
 {
     public const EVENT_NAME = 'share';
 

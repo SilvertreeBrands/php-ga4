@@ -48,7 +48,7 @@ interface RemoveFromCartInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return RemoveFromCartInterface
      */
     public function setItems(array $items): RemoveFromCartInterface;
@@ -56,7 +56,7 @@ interface RemoveFromCartInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

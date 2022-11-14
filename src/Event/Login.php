@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class Login extends AbstractEvent implements LoginInterface
+use Silvertree\Ga4\AbstractObject;
+
+class Login extends AbstractObject implements LoginInterface
 {
     public const EVENT_NAME = 'login';
 

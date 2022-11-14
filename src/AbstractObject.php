@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Silvertree\Ga4\Event;
+namespace Silvertree\Ga4;
 
-abstract class AbstractEvent implements \ArrayAccess
+abstract class AbstractObject implements \ArrayAccess
 {
     /**
      * @var array

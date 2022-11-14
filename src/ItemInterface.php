@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Silvertree\Ga4\Event;
+namespace Silvertree\Ga4;
 
 interface ItemInterface
 {
@@ -24,6 +24,11 @@ interface ItemInterface
     public const LOCATION_ID = 'location_id';
     public const PRICE = 'price';
     public const QUANTITY = 'quantity';
+
+    public const REQUIRED_PARAMS = [
+        self::ITEM_ID,
+        self::ITEM_NAME
+    ];
 
     /**
      * Set item ID

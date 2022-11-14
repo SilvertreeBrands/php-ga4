@@ -46,7 +46,7 @@ interface ViewItemListInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return ViewItemListInterface
      */
     public function setItems(array $items): ViewItemListInterface;
@@ -54,7 +54,7 @@ interface ViewItemListInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class ViewPromotion extends AbstractEvent implements ViewPromotionInterface
+use Silvertree\Ga4\AbstractObject;
+
+class ViewPromotion extends AbstractObject implements ViewPromotionInterface
 {
     public const EVENT_NAME = 'view_promotion';
 

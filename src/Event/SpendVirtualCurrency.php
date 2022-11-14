@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class SpendVirtualCurrency extends AbstractEvent implements SpendVirtualCurrencyInterface
+use Silvertree\Ga4\AbstractObject;
+
+class SpendVirtualCurrency extends AbstractObject implements SpendVirtualCurrencyInterface
 {
     public const EVENT_NAME = 'spend_virtual_currency';
 

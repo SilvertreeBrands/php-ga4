@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class Refund extends AbstractEvent implements RefundInterface
+use Silvertree\Ga4\AbstractObject;
+
+class Refund extends AbstractObject implements RefundInterface
 {
     public const EVENT_NAME = 'refund';
 

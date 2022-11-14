@@ -48,7 +48,7 @@ interface AddToCartInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return AddToCartInterface
      */
     public function setItems(array $items): AddToCartInterface;
@@ -56,7 +56,7 @@ interface AddToCartInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

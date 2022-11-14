@@ -80,7 +80,7 @@ interface AddPaymentInfoInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return AddPaymentInfoInterface
      */
     public function setItems(array $items): AddPaymentInfoInterface;
@@ -88,7 +88,7 @@ interface AddPaymentInfoInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

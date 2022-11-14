@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class Purchase extends AbstractEvent implements PurchaseInterface
+use Silvertree\Ga4\AbstractObject;
+
+class Purchase extends AbstractObject implements PurchaseInterface
 {
     public const EVENT_NAME = 'purchase';
 

@@ -80,7 +80,7 @@ interface AddShippingInfoInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return AddShippingInfoInterface
      */
     public function setItems(array $items): AddShippingInfoInterface;
@@ -88,7 +88,7 @@ interface AddShippingInfoInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

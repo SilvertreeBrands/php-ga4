@@ -129,7 +129,7 @@ interface RefundInterface
     /**
      * Set items
      *
-     * @param ItemInterface[] $items
+     * @param \Silvertree\Ga4\ItemInterface[] $items
      * @return RefundInterface
      */
     public function setItems(array $items): RefundInterface;
@@ -137,7 +137,7 @@ interface RefundInterface
     /**
      * Get items
      *
-     * @return ItemInterface[]
+     * @return \Silvertree\Ga4\ItemInterface[]
      */
     public function getItems(): array;
 }

@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-class JoinGroup extends AbstractEvent implements JoinGroupInterface
+use Silvertree\Ga4\AbstractObject;
+
+class JoinGroup extends AbstractObject implements JoinGroupInterface
 {
     public const EVENT_NAME = 'join_group';
 
