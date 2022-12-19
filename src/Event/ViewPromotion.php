@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class ViewPromotion extends AbstractObject implements ViewPromotionInterface
 {
-    public const EVENT_NAME = 'view_promotion';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'view_promotion';
 
     /**
      * @inheritDoc

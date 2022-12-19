@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class RemoveFromCart extends AbstractObject implements RemoveFromCartInterface
 {
-    public const EVENT_NAME = 'remove_from_cart';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'remove_from_cart';
 
     /**
      * @inheritDoc

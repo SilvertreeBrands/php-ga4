@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class EarnVirtualCurrency extends AbstractObject implements EarnVirtualCurrencyInterface
 {
-    public const EVENT_NAME = 'earn_virtual_currency';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'earn_virtual_currency';
 
     /**
      * @inheritDoc

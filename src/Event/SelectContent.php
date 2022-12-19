@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class SelectContent extends AbstractObject implements SelectContentInterface
 {
-    public const EVENT_NAME = 'select_content';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'select_content';
 
     /**
      * @inheritDoc

@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class GenerateLead extends AbstractObject implements GenerateLeadInterface
 {
-    public const EVENT_NAME = 'generate_lead';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'generate_lead';
 
     /**
      * @inheritDoc

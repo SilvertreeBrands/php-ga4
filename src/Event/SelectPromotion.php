@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class SelectPromotion extends AbstractObject implements SelectPromotionInterface
 {
-    public const EVENT_NAME = 'select_promotion';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'select_promotion';
 
     /**
      * @inheritDoc

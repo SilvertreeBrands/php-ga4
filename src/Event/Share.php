@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class Share extends AbstractObject implements ShareInterface
 {
-    public const EVENT_NAME = 'share';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'share';
 
     /**
      * @inheritDoc

@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class Purchase extends AbstractObject implements PurchaseInterface
 {
-    public const EVENT_NAME = 'purchase';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'purchase';
 
     /**
      * @inheritDoc

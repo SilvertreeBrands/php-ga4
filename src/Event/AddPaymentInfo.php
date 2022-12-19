@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class AddPaymentInfo extends AbstractObject implements AddPaymentInfoInterface
 {
-    public const EVENT_NAME = 'add_payment_info';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'add_payment_info';
 
     /**
      * @inheritDoc
@@ -97,25 +100,5 @@ class AddPaymentInfo extends AbstractObject implements AddPaymentInfoInterface
     public function getItems(): array
     {
         return (array)$this->offsetGet(AddPaymentInfoInterface::ITEMS);
-    }
-
-    /**
-     * Add item
-     *
-     * @param \Silvertree\Ga4\ItemInterface $item
-     *
-     * @return AddPaymentInfo
-     */
-    public function addItem(\Silvertree\Ga4\ItemInterface $item): AddPaymentInfo
-    {
-        $identifier = $item->getItemId();
-
-        if (!$identifier) {
-            $identifier = $item->getItemName();
-        }
-
-        $this->data[AddPaymentInfoInterface::ITEMS][$identifier] = $item;
-
-        return $this;
     }
 }

@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class Refund extends AbstractObject implements RefundInterface
 {
-    public const EVENT_NAME = 'refund';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'refund';
 
     /**
      * @inheritDoc

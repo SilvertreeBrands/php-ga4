@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class AddToWishlist extends AbstractObject implements AddToWishlistInterface
 {
-    public const EVENT_NAME = 'add_to_wishlist';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'add_to_wishlist';
 
     /**
      * @inheritDoc

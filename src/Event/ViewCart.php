@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class ViewCart extends AbstractObject implements ViewCartInterface
 {
-    public const EVENT_NAME = 'view_cart';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'view_cart';
 
     /**
      * @inheritDoc

@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class SignUp extends AbstractObject implements SignUpInterface
 {
-    public const EVENT_NAME = 'sign_up';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'sign_up';
 
     /**
      * @inheritDoc

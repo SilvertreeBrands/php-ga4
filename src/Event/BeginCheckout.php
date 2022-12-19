@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class BeginCheckout extends AbstractObject implements BeginCheckoutInterface
 {
-    public const EVENT_NAME = 'begin_checkout';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'begin_checkout';
 
     /**
      * @inheritDoc

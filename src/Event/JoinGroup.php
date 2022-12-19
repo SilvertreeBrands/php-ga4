@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class JoinGroup extends AbstractObject implements JoinGroupInterface
 {
-    public const EVENT_NAME = 'join_group';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'join_group';
 
     /**
      * @inheritDoc

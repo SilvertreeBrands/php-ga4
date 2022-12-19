@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class ViewItem extends AbstractObject implements ViewItemInterface
 {
-    public const EVENT_NAME = 'view_item';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'view_item';
 
     /**
      * @inheritDoc

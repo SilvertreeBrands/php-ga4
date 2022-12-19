@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class Login extends AbstractObject implements LoginInterface
 {
-    public const EVENT_NAME = 'login';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'login';
 
     /**
      * @inheritDoc

@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class Search extends AbstractObject implements SearchInterface
 {
-    public const EVENT_NAME = 'search';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'search';
 
     /**
      * @inheritDoc
