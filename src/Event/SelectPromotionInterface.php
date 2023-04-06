@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface SelectPromotionInterface
+interface SelectPromotionInterface extends \Silvertree\Ga4\EventInterface
 {
     public const CREATIVE_NAME = 'creative_name';
     public const CREATIVE_SLOT = 'creative_slot';

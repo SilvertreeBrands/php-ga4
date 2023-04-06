@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface JoinGroupInterface
+interface JoinGroupInterface extends \Silvertree\Ga4\EventInterface
 {
     public const GROUP_ID = 'group_id';
 

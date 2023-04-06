@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface SignUpInterface
+interface SignUpInterface extends \Silvertree\Ga4\EventInterface
 {
     public const METHOD = 'method';
 

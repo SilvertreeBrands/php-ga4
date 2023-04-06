@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface SpendVirtualCurrencyInterface
+interface SpendVirtualCurrencyInterface extends \Silvertree\Ga4\EventInterface
 {
     public const VALUE = 'value';
     public const VIRTUAL_CURRENCY_NAME = 'virtual_currency_name';

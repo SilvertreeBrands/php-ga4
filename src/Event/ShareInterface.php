@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface ShareInterface
+interface ShareInterface extends \Silvertree\Ga4\EventInterface
 {
     public const METHOD = 'method';
     public const CONTENT_TYPE = 'content_type';

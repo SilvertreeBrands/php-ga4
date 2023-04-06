@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface SearchInterface
+interface SearchInterface extends \Silvertree\Ga4\EventInterface
 {
     public const SEARCH_TERM = 'search_term';
 

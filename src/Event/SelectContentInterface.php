@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface SelectContentInterface
+interface SelectContentInterface extends \Silvertree\Ga4\EventInterface
 {
     public const CONTENT_TYPE = 'content_type';
     public const ITEM_ID = 'item_id';

@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-interface BeginCheckoutInterface
+interface BeginCheckoutInterface extends \Silvertree\Ga4\EventInterface
 {
     public const CURRENCY = 'currency';
     public const VALUE = 'value';
