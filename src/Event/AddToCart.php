@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class AddToCart extends AbstractObject implements AddToCartInterface
 {
-    public const EVENT_NAME = 'add_to_cart';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'add_to_cart';
 
     /**
      * @inheritDoc

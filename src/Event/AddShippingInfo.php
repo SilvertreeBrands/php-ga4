@@ -7,7 +7,10 @@ use Silvertree\Ga4\AbstractObject;
 
 class AddShippingInfo extends AbstractObject implements AddShippingInfoInterface
 {
-    public const EVENT_NAME = 'add_shipping_info';
+    /**
+     * @inheritDoc
+     */
+    public string $eventName = 'add_shipping_info';
 
     /**
      * @inheritDoc

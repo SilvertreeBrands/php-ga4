@@ -136,9 +136,9 @@ abstract class AbstractObject implements \ArrayAccess
      *
      * @return string|bool
      */
-    public function toJson(): array
+    public function toJson(): ?string
     {
-        return json_encode($this->toArray());
+        return json_encode($this->toArray(), JSON_PRESERVE_ZERO_FRACTION);
     }
 
     /**
@@ -161,6 +161,28 @@ abstract class AbstractObject implements \ArrayAccess
             }
 
             $this->data[$key][$identifier] = $item;
+        }
+
+        return $this;
+    }
+
+    /**
+     * Add items to existing items set
+     *
+     * @param array $items
+     *
+     * @return AbstractObject
+     */
+    public function addItems(array $items): AbstractObject
+    {
+        if (defined(get_class($this) . '::ITEMS')) {
+            foreach ($items as $item) {
+                if (!$item instanceof \Silvertree\Ga4\ItemInterface) {
+                    continue;
+                }
+
+                $this->addItem($item, $this::ITEMS);
+            }
         }
 
         return $this;
