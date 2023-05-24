@@ -94,6 +94,22 @@ abstract class AbstractObject implements \ArrayAccess
     }
 
     /**
+     * Cleanup
+     *
+     * Remove empty values from data array
+     *
+     * @return void
+     */
+    public function cleanup(): void
+    {
+        foreach ($this->data as $key => $value) {
+            if (!$value) {
+                unset($this->data[$key]);
+            }
+        }
+    }
+
+    /**
      * Convert to array
      *
      * @return array
@@ -105,13 +121,15 @@ abstract class AbstractObject implements \ArrayAccess
         ];
 
         if (!empty($this->customEventParams)) {
-            $dataArr['customerEventParams'] = $this->customEventParams;
+            $dataArr['customEventParams'] = $this->customEventParams;
         }
 
+        $this->cleanup();
         foreach ($this->data as $key => $value) {
             if (is_array($value)) {
                 foreach ($value as $obj) {
                     if ($obj instanceof \Silvertree\Ga4\ItemInterface) {
+                        $obj->cleanup();
                         if ($this->eventParamsKey) {
                             $dataArr[$this->eventParamsKey][$key][] = $obj->offsetGet();
                         } else {
