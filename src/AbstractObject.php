@@ -261,4 +261,20 @@ abstract class AbstractObject implements \ArrayAccess
         $this->customEventParams = $params;
         return $this;
     }
+
+    /**
+     * Add custom event param
+     *
+     * @param string $key
+     * @param mixed $value
+     *
+     * @return AbstractObject
+     */
+    public function addCustomEventParam(
+        string $key,
+        $value
+    ): AbstractObject {
+        $this->customEventParams[$key] = $value;
+        return $this;
+    }
 }
