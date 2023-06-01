@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class Search extends AbstractObject implements SearchInterface
+class Search extends AbstractEvent implements SearchInterface
 {
     /**
      * @inheritDoc

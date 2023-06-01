@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class ViewPromotion extends AbstractObject implements ViewPromotionInterface
+class ViewPromotion extends AbstractEvent implements ViewPromotionInterface
 {
     /**
      * @inheritDoc

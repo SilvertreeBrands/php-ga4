@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class EarnVirtualCurrency extends AbstractObject implements EarnVirtualCurrencyInterface
+class EarnVirtualCurrency extends AbstractEvent implements EarnVirtualCurrencyInterface
 {
     /**
      * @inheritDoc

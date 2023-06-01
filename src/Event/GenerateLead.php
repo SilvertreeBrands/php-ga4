@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class GenerateLead extends AbstractObject implements GenerateLeadInterface
+class GenerateLead extends AbstractEvent implements GenerateLeadInterface
 {
     /**
      * @inheritDoc

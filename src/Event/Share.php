@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class Share extends AbstractObject implements ShareInterface
+class Share extends AbstractEvent implements ShareInterface
 {
     /**
      * @inheritDoc

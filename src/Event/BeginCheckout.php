@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class BeginCheckout extends AbstractObject implements BeginCheckoutInterface
+class BeginCheckout extends AbstractEvent implements BeginCheckoutInterface
 {
     /**
      * @inheritDoc
