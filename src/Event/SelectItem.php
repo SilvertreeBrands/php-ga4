@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class SelectItem extends AbstractObject implements SelectItemInterface
+class SelectItem extends AbstractEvent implements SelectItemInterface
 {
     /**
      * @inheritDoc

@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class AddToCart extends AbstractObject implements AddToCartInterface
+class AddToCart extends AbstractEvent implements AddToCartInterface
 {
     /**
      * @inheritDoc

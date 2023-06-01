@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class ViewCart extends AbstractObject implements ViewCartInterface
+class ViewCart extends AbstractEvent implements ViewCartInterface
 {
     /**
      * @inheritDoc

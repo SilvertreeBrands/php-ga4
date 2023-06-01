@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class SignUp extends AbstractObject implements SignUpInterface
+class SignUp extends AbstractEvent implements SignUpInterface
 {
     /**
      * @inheritDoc

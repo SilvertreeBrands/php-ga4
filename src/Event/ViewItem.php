@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class ViewItem extends AbstractObject implements ViewItemInterface
+class ViewItem extends AbstractEvent implements ViewItemInterface
 {
     /**
      * @inheritDoc

@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class AddToWishlist extends AbstractObject implements AddToWishlistInterface
+class AddToWishlist extends AbstractEvent implements AddToWishlistInterface
 {
     /**
      * @inheritDoc

@@ -332,4 +332,12 @@ class Item extends AbstractObject implements ItemInterface
     {
         return (float)$this->offsetGet(ItemInterface::QUANTITY);
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function toArray(): array
+    {
+        return $this->data;
+    }
 }

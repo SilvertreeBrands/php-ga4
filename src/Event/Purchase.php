@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class Purchase extends AbstractObject implements PurchaseInterface
+class Purchase extends AbstractEvent implements PurchaseInterface
 {
     /**
      * @inheritDoc

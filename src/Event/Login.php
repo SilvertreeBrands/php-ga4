@@ -3,9 +3,7 @@ declare(strict_types=1);
 
 namespace Silvertree\Ga4\Event;
 
-use Silvertree\Ga4\AbstractObject;
-
-class Login extends AbstractObject implements LoginInterface
+class Login extends AbstractEvent implements LoginInterface
 {
     /**
      * @inheritDoc
