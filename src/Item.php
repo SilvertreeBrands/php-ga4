@@ -11,6 +11,20 @@ class Item extends AbstractObject implements ItemInterface
     protected array $requiredParams = ItemInterface::REQUIRED_PARAMS;
 
     /**
+     * @var \Silvertree\Ga4\CustomParamsInterface
+     */
+    protected $customParams;
+
+    /**
+     * @inheritdoc
+     */
+    public function __construct()
+    {
+        $this->customParams = new \Silvertree\Ga4\CustomParams();
+        parent::__construct();
+    }
+
+    /**
      * @inheritDoc
      */
     public function setItemId(string $itemId): ItemInterface
@@ -336,8 +350,25 @@ class Item extends AbstractObject implements ItemInterface
     /**
      * @inheritdoc
      */
+    public function addCustomParam(
+        string $key,
+        $value
+    ): ItemInterface {
+        $this->customParams->addParam($key, $value);
+        return $this;
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function toArray(): array
     {
+        $customParams = $this->customParams->toArray();
+
+        if (!empty($customParams)) {
+            $this->data = array_merge($this->data, $customParams);
+        }
+
         return $this->data;
     }
 }
