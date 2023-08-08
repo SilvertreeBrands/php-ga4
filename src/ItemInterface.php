@@ -314,4 +314,14 @@ interface ItemInterface
      * @return float
      */
     public function getQuantity(): float;
+
+    /**
+     * Add custom param
+     *
+     * @param string $key
+     * @param mixed $value
+     *
+     * @return ItemInterface
+     */
+    public function addCustomParam(string $key, $value): ItemInterface;
 }

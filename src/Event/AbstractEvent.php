@@ -64,9 +64,9 @@ abstract class AbstractEvent extends \Silvertree\Ga4\AbstractObject implements \
                         $obj->cleanup();
 
                         if ($this->eventParamsKey) {
-                            $dataArr[$this->eventParamsKey][$key][] = $obj->offsetGet();
+                            $dataArr[$this->eventParamsKey][$key][] = $obj->toArray();
                         } else {
-                            $dataArr[$key][] = $obj->offsetGet();
+                            $dataArr[$key][] = $obj->toArray();
                         }
                     }
                 }
