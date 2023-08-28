@@ -23,4 +23,18 @@ class CustomParams extends AbstractObject implements CustomParamsInterface
     {
         return [self::DATALAYER_KEY => $this->data];
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function toItemArray(): array
+    {
+        $arr = [];
+
+        foreach ($this->data as $key => $value) {
+            $arr[self::DATALAYER_KEY_PREFIX . $key] = $value;
+        }
+
+        return $arr;
+    }
 }

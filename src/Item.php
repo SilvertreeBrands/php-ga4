@@ -363,7 +363,7 @@ class Item extends AbstractObject implements ItemInterface
      */
     public function toArray(): array
     {
-        $customParams = $this->customParams->toArray();
+        $customParams = $this->customParams->toItemArray();
 
         if (!empty($customParams)) {
             $this->data = array_merge($this->data, $customParams);
