@@ -361,6 +361,15 @@ class Item extends AbstractObject implements ItemInterface
     /**
      * @inheritdoc
      */
+    public function getCustomParam(
+        string $key
+    ) {
+        return $this->customParams->getParam($key);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function toArray(): array
     {
         $customParams = $this->customParams->toItemArray();
