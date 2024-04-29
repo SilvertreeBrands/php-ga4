@@ -19,6 +19,15 @@ interface CustomParamsInterface
     public function addParam(string $key, $value): CustomParamsInterface;
 
     /**
+     * Get param
+     *
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function getParam(string $key);
+
+    /**
      * To array
      *
      * @return array

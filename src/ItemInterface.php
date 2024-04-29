@@ -324,4 +324,13 @@ interface ItemInterface
      * @return ItemInterface
      */
     public function addCustomParam(string $key, $value): ItemInterface;
+
+    /**
+     * Get custom param
+     *
+     * @param string $key
+     *
+     * @return mixed
+     */
+    public function getCustomParam(string $key);
 }
